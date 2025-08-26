@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio - Dasun Mathisha</title>
+  <link rel="stylesheet" href="style.css" type="text/css"
+
+  
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="a2">Dasun Mathisha</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="home">
+      <div>
+        <h1>Hi, I'm <span style="color: #6aa9ff">Dasun Mathisha</span></h1>
+        <h2 class="tagline">Front-End Developer </h2>
+        <p class="muted">
+          I am a front-end engineer who enjoys crafting clean, responsive, and user-friendly interfaces. I am proficient at realizing ideas with pixel-perfect design using modern web technologies with performance and accessibility always in mind.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="https://drive.google.com/file/d/1wMMEKFAFn1LENdwOqA_XzlpTh8z_HQMc/view?usp=sharing" target="_blank">Download CV</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <img src="3.jpeg" width="410px" height="650px" alt="Profile Picture" class="roundimage" />
+    </section>
+
+    <!-- About  -->
+    <section id="about" class="about">
+      <h2 class="section-title">About Me</h2>
+      <div class="card">
+        <p>
+          I'm a UI/UX-focused Frontend Developer who enjoys building clean, responsive, and user-friendly interfaces. 
+          I've got a strong foundation in HTML, CSS, JavaScript, and Node.js and enjoy turning concepts into functional, 
+          stunning digital experiences. My role is a blend of design and development, delivering both form and function.
+        </p>
+        <p>
+          I am always on the lookout for current UI/UX trends, patterns, and best practices in order to design interfaces that not only look good but also instinctively feel right to users. Apart from development, 
+          I get involved in open-source projects, connect with other developers, and contribute to the community.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skill" data-percent="90">
+        <div class="skill-name">HTML5</div>
+        <div class="bar"><div class="fill">0%</div></div>
+      </div>
+      <div class="skill" data-percent="75">
+        <div class="skill-name">JavaScript</div>
+        <div class="bar"><div class="fill">0%</div></div>
+      </div>
+      <div class="skill" data-percent="60">
+        <div class="skill-name">Git & GitHub</div>
+        <div class="bar"><div class="fill">0%</div></div>
+      </div>
+      <div class="skill" data-percent="50">
+        <div class="skill-name">Node.js</div>
+        <div class="bar"><div class="fill">0%</div></div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <article class="card project">
+          <img src="market.jpg" alt="Marketing Website" class="roundimage1" />
+          <h3>Marketing Website</h3>
+          <p>Developed a responsive marketing site with clean, modern UI/UX.</p>
+          <div class="boxu">HTML</div>
+          <div class="boxu">CSS</div>
+          <div class="boxu">JS</div>
+          <p><a href="https://github.com/username/marketing-website" target="_blank">View on GitHub</a></p>
+        </article>
+
+        <article class="card project">
+          <img src="taskimg.jpg" alt="Task Manager UI" class="roundimage1" />
+          <h3>Task Manager UI</h3>
+          <p>Clean dashboard layout with cards, filters, and drag‑ready lists.</p>
+          <div class="boxu">React</div>
+          <div class="boxu">Figma</div>
+          <p><a href="https://github.com/username/task-manager" target="_blank">View on GitHub</a></p>
+        </article>
+
+        <article class="card project">
+          <img src="blog.jpg" alt="Blog Template" class="roundimage1" />
+          <h3>Blog Template</h3>
+          <p>Accessible article layout with typography scale and code blocks.</p>
+          <div class="boxu">React</div>
+          <div class="boxu">API</div>
+          <p><a href="https://github.com/username/blog-template" target="_blank">View on GitHub</a></p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card">
+        <form>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" />
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Type your message" rows="5"></textarea>
+          </div>
+          <button class="btn primary" type="submit">Send Message</button>
+        </form>
+        <div class="social-links">
+          <a href="usampath1978@gmail.com" class="links">Email</a>
+          <a href="https://github.com/DasunMathisha" target="_blank" class="links">GitHub</a>
+          <a href="https://www.linkedin.com/in/dasun-mathisha-07a549377?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="links">LinkedIn</a>
+          
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+  <footer>
+    <div class="ft">© 2025 Dasun Mathisha. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      // Skill bar animation
+      document.querySelectorAll(".skill").forEach(skill => {
+        let percent = skill.getAttribute("data-percent");
+        let fill = skill.querySelector(".fill");
+        let count = 0;
+
+        let interval = setInterval(() => {
+          if (count >= percent) {
+            clearInterval(interval);
+          } else {
+            count++;
+            fill.style.width = count + "%";
+            fill.textContent = count + "%";
+          }
+        }, 20);
+      });
+      
+      
+      const projectElements = document.querySelectorAll('.project');
+      
+      const projectObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            
+            setTimeout(() => {
+              entry.target.classList.add('animate');
+            }, index * 200); 
+            projectObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      
+      projectElements.forEach(project => {
+        projectObserver.observe(project);
+      });
+    });
+  </script>
+</body>
+</html>
